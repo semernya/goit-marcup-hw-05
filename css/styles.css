@@ -188,7 +188,7 @@ img {
     text-align: center;
 }
 
-.button {
+.hero-button {
     display: block;
     background-color: #4D5AE5;
     color: #fff;
@@ -544,4 +544,59 @@ img {
 
 .footer-icon {
     fill: #F4F4FD;
+}
+
+/* Modal */
+
+.backdrop {
+    position: fixed;
+    background: rgba(46, 47, 66, 0.40);
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background: #FCFCFC;
+    padding: 24px;
+}
+
+.close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    border: #0000001A;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon {
+    fill: #2E2F42;
+}
+
+.modal-input {
+    width: auto;
 }
