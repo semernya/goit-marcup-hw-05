@@ -588,19 +588,17 @@ img {
     color: #FFF;
     text-align: center;
     cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .footer-button:hover,
 .footer-button:active,
 .footer-button:focus {
     background-color: #404BBF;
-}
-
-.footer-button-text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
 }
 
 .footer-icon {
@@ -664,6 +662,7 @@ img {
 }
 
 .close-button:hover,
+.close-button:active,
 .close-button:focus {
     background-color: #404BBF;
     border: none;
