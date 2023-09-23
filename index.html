@@ -414,7 +414,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="footer-links-container">
           <p class="footer-title">Social media</p>
 
           <ul class="footer-links">
@@ -448,7 +448,25 @@
                   </li>
                 </ul>
         </div>
+
+        <div class="footer-input-container">
+
+          <p class="footer-title">Subscribe</p>
+  
+          <div class="footer-input-wrap">
+            <label class="footer-label visually-hidden" for="footer-input"></label>
+            <input class="footer-input" type="email" name="email" id="footer-input" placeholder="Email" />
+            <button class="footer-button" type="button">
+              <p class="footer-button-text">Subscribe</p>
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
       </div>
+
     </footer>
 
     <!-- Modal -->
@@ -492,8 +510,8 @@
         </div>
 
         <div class="modal-field">
-          <label class="modal-label" for="textarea">Comment</label>
-          <input class="modal-textarea" type="textarea" name="textarea" id="textarea" value="comment"  placeholder="Text input" />
+          <label class="modal-label" for="comment">Comment</label>
+          <input class="modal-textarea" type="text" name="comment" id="comment"  placeholder="Text input" />
         </div>
 
         <div class="modal-checkbox-wrap">
