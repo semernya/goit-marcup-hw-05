@@ -450,71 +450,76 @@
         </div>
 
         <div class="footer-input-container">
-
           <p class="footer-title">Subscribe</p>
-  
-          <div class="footer-input-wrap">
-            <label class="footer-label visually-hidden" for="footer-input"></label>
-            <input class="footer-input" type="email" name="email" id="footer-input" placeholder="Email" />
-            <button class="footer-button" type="button">
+
+          <form class="footer-input-wrap">
+
+            <label class="footer-label" for="footer-input">
+              <input class="footer-input" type="email" name="email" id="footer-input" placeholder="E-mail" />
+            </label>
+            
+            <button class="footer-button" type="submit">
               Subscribe
               <svg class="footer-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
+
+          </form>
+
         </div>
-
       </div>
-
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
+
           <button class="close-button" type="button">
             <svg class="close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <div class="modal-field">
-          <label class="modal-label" for="name">Name</label>
+          <p class="modal-title">Leave your contacts and we will call you back</p>
+          
+          <form>
+          <div class="modal-field">
+          <label class="modal-label" for="user-name">Name</label>
           <div class="modal-input-wrap">
-            <input class="modal-input" type="text" name="name" id="name" autofocus />
-            <svg class="input-icon" width="16" height="24">
+            <input class="modal-input" type="text" name="name" id="user-name" autofocus />
+            <svg class="input-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
-        </div>
+          </div>
 
-        <div class="modal-field">
-          <label class="modal-label" for="phone">Phone</label>
+          <div class="modal-field">
+          <label class="modal-label" for="user-phone">Phone</label>
           <div class="modal-input-wrap">
-            <input class="modal-input" type="text" name="phone" id="phone" />
-            <svg class="input-icon" width="16" height="24">
+            <input class="modal-input" type="text" name="user-phone" id="phone" />
+            <svg class="input-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-        </div>
+          </div>
 
-        <div class="modal-field">
-          <label class="modal-label" for="email">Email</label>
+          <div class="modal-field">
+          <label class="modal-label" for="user-email">Email</label>
           <div class="modal-input-wrap">
-            <input class="modal-input" type="text" name="email" id="email" />
-            <svg class="input-icon" width="16" height="24">
+            <input class="modal-input" type="text" name="user-email" id="email" />
+            <svg class="input-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-        </div>
+          </div>
 
-        <div class="modal-field">
-          <label class="modal-label" for="comment">Comment</label>
-          <input class="modal-textarea" type="text" name="comment" id="comment"  placeholder="Text input" />
-        </div>
+          <div class="modal-field">
+          <label class="modal-label" for="user-comment">Comment</label>
+          <input class="modal-textarea" type="textarea" name="user-comment" id="comment"  placeholder="Text input" />
+          </div>
 
-        <div class="modal-checkbox-wrap">
+          <div class="modal-checkbox-wrap">
           <input class="modal-checkbox-input visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
           <span class="checkbox-check">
             <svg class="checkbox-icon" width="16" height="16">
@@ -525,11 +530,10 @@
             I accept the terms and conditions of the 
             <a class="modal-checkbox-link" href="#">Privacy Policy</a>
           </label>
-        </div>
+          </div>
 
           <button class="send-button" type="submit">Send</button>
-
-        <form></form>
+        </form>
       </div>
     </div>
   </body>
